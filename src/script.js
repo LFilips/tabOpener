@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Find a job!</title>
-</head>
-<body>
-<!-- Include Scala.js compiled code -->
-
-<button id="click-me-button" type="button" onclick="openTab()" class="button">
-Hi! Click here for find a job!
-</button>
-
-<script>
-  function openTab() {
+function openTab() {
 
   var textJson = '{ "links": [' +
     '"https://careers.virginmedia.com/job-search?s_Keywords=&s_FriendlyRegion=London",' +
@@ -33,27 +19,7 @@ Hi! Click here for find a job!
           console.log(link);
 
           window.open(link, '_blank');
+          window.focus()
         }
 
   }
-
-
-</script>
-
-<style>
-    .button {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
-</style>
-
-</body>
-</html>
